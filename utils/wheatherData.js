@@ -17,7 +17,6 @@ const weatherData = (address, callback) => {
                     humidity: null,
                 })
             }else{
-                console.log("get data")
                 callback(undefined, {
                     temperature: body.list[0].main.temp,
                     description: body.list[0].weather[0].description,
